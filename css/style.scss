@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: lightblue;
+}
+
+#menubutton{
+    height: 10vh;
+    top: 10px;
+    user-select: none;
+}
+
+.logo{
+    height: 30vh;
+}
+
+header{
+    height: 70vh;
+    color: white;
+    background-image: url(/media/backgroundimage.jpg);
+}
+
+div{
+    display: grid;
+    justify-content: center;
+}
+
+#dropdown{
+    background-color: aqua;
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+}
+
+#menubutton:focus-within{
+    pointer-events: none;
+}
+
+#menubutton:focus-within #dropdown{
+    display: block;
+    pointer-events: all;
+}
+
+
