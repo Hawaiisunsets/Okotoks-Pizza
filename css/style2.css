@@ -54,41 +54,6 @@ div {
   pointer-events: all;
 }
 
-#fresh {
-  display: gird;
-  text-align: center;
-  color: red;
-  margin-top: 10px;
-}
-
-#love {
-  margin-top: 10px;
-}
-
-#special {
-  display: grid;
-  text-align: center;
-  margin-top: 10px;
-  color: red;
-}
-
-#foot {
-  background-color: white;
-}
-
-#nav {
-  display: grid;
-  justify-content: start;
-  background-color: white;
-  grid-template-columns: 40px 40px 40px;
-  width: 100vw;
-}
-
-#nav > img {
-  height: 10vh;
-  width: 10vw;
-}
-
-#logo2 {
-  height: 10vh;
-}/*# sourceMappingURL=style.css.map */
+img {
+  height: 100px;
+}/*# sourceMappingURL=style2.css.map */
