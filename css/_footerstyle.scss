@@ -1,0 +1,36 @@
+#footercontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background-color: gray;
+    .logofooter{
+        height: 50px;
+    }
+    div{
+        color: white;
+    }
+    
+    nav{
+        list-style: none;
+        color: white;   
+    }
+    a{
+        color: white;
+    }
+    img{
+        height: 20px;
+    }
+   li{
+    list-style: none;
+   }
+   h2{
+    color: black;
+   }
+   .pfooter{
+    font-size: 1rem;
+    display: grid;
+    justify-items: start;
+}
+}
+
+
+

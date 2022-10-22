@@ -1,0 +1,74 @@
+*{
+    margin: 1px;
+    padding: 0;
+}
+
+html{
+    background-color: lightgray;
+    
+}
+
+#headcontainer{
+    height: 50vh;
+    width: 100vw;
+    color: white;
+    background-image: url(/media/background.avif);
+    background-size: 100vw;
+    display: grid;
+    grid-template-columns: 0.1fr 0.4fr 1fr;
+    justify-items: end;
+    align-content: start;    
+    box-sizing: border-box;
+}
+
+
+#menubutton{
+    height: 10vh;
+    top: 10px;
+    user-select: none;
+}
+
+.logo{
+    height: 20vh;
+}
+
+.hambutton{
+    height: 10vh;
+    width: 10vw;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+li{
+    list-style: none;
+    margin-top: 10px;
+}
+
+
+#dropdown{
+    // background-image: url(/media/pizzalogo.png);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+    display: none;
+    position: absolute;
+    width: 50vw;
+    height: 40vh;
+    text-align: center;
+    padding: 30px;
+    list-style: none;
+    font-size: 2rem;
+    text-decoration-style: none;
+}
+
+#menubutton:focus-within{
+    pointer-events: none;
+}
+
+#menubutton:focus-within #dropdown{
+    display: block;
+    pointer-events: all;
+}
+

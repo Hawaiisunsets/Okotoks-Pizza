@@ -105,30 +105,8 @@ li {
   justify-items: start;
 }
 
-#aboutus {
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1.5rem;
-  box-sizing: border-box;
-}
-
-.readmore {
-  border-style: solid;
-  margin-top: 25px;
-}
-
-#insiderest {
-  margin-top: 15px;
-  height: 80vh;
-  width: 100vw;
-}
-
-#video {
+.h1header {
   display: grid;
   justify-content: center;
-}
-
-p {
-  font-size: 1.5rem;
-  text-align: center;
-}/*# sourceMappingURL=style.css.map */
+  color: red;
+}/*# sourceMappingURL=menustyle.css.map */

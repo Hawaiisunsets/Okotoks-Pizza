@@ -1,96 +1,32 @@
-*{
-    margin: 0;
-    padding: 0;
+@use "headerstyle";
+@use "footerstyle";
+
+#aboutus{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    box-sizing: border-box;
 }
 
-html{
-    background-color: lightblue;
-}
-
-#head{
-    height: 40vh;
-    color: white;
-    background-image: url(/media/backgroundimage.jpg);
-    background-size: 100vw;
+.readmore{
+    border-style: solid;
+    margin-top: 25px;
     
 }
 
-div{
+#insiderest{
+    margin-top: 15px;
+    height: 80vh;
+    width: 100vw;
+}
+
+#video{
     display: grid;
     justify-content: center;
 }
 
-#menubutton{
-    height: 10vh;
-    top: 10px;
-    user-select: none;
-}
-
-.logo{
-    height: 20vh;
-}
-
-.hambutton{
-    height: 10vh;
-    width: 10vw;
-}
-
-
-
-#dropdown{
-    background-color: aqua;
-    display: none;
-    position: absolute;
-    width: 100vw;
-    height: 50vh;
-}
-
-#menubutton:focus-within{
-    pointer-events: none;
-}
-
-#menubutton:focus-within #dropdown{
-    display: block;
-    pointer-events: all;
-}
-
-#fresh{
-    display: gird;
+p{
+    font-size: 1.5rem;
     text-align: center;
-    color: red;
-    margin-top: 10px;
-}
-
-#love{
-    margin-top: 10px;
-
-}
-
-#special{
-    display: grid;
-    text-align: center;
-    margin-top: 10px;
-    color: red;
-}
-
-#foot{
-    background-color: white;
-}
-
-#nav{
-    display: grid;
-    justify-content: start;
-    background-color: white;
-    grid-template-columns: 40px 40px 40px;
-    width: 100vw;
-}
-
-#nav > img{
-    height: 10vh;
-    width: 10vw;
-}
-
-#logo2{
-    height: 10vh;
 }
 
