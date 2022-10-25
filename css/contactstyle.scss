@@ -1,2 +1,33 @@
 @use "_headerstyle";
 @use "_footerstyle";
+
+#contactmain{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(228, 228, 224);
+    text-align: center;
+    justify-items: center;
+    color: rgb(130, 115, 115);
+
+    
+}
+
+
+
+.familyphoto{
+    height: 300px;
+    width: 201px;
+}
+
+.familyphoto2{
+    height: 300px;
+    width: 201px;
+}
+
+#contactmain2{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(228, 228, 224);
+    text-align: center;
+    justify-items: center;
+}

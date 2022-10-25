@@ -8,10 +8,11 @@ html {
 }
 
 #headcontainer {
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   color: white;
   background-image: url(/media/background.avif);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
   background-size: 100vw;
   display: grid;
   grid-template-columns: 0.1fr 0.4fr 1fr;
@@ -103,4 +104,31 @@ li {
   font-size: 1rem;
   display: grid;
   justify-items: start;
+}
+
+#contactmain {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgb(228, 228, 224);
+  text-align: center;
+  justify-items: center;
+  color: rgb(130, 115, 115);
+}
+
+.familyphoto {
+  height: 300px;
+  width: 201px;
+}
+
+.familyphoto2 {
+  height: 300px;
+  width: 201px;
+}
+
+#contactmain2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: rgb(228, 228, 224);
+  text-align: center;
+  justify-items: center;
 }/*# sourceMappingURL=contactstyle.css.map */
