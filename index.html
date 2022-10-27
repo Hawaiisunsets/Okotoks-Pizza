@@ -11,49 +11,61 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header id="headcontainer">
-        <div tabindex="0" id="menubutton">
-            <label>
-                <img class="hambutton" src="/media/menu.svg" alt="Menu Button">
-            </label> 
-            
-            <div id="dropdown">
-                <ul>
-                    <li><a class="links" href="index.html">HOME</a></li>
-                    <li><a class="links" href="menu.html">MENU</a></li>
-                    <li><a class="links" href="contact.html">CONTACT</a></li>
-                </ul>
+    <header>
+        <section id="headcontainer">
+            <div>
+                <div>
+                    <img class="logo" src="/media/pizzalogo.png" alt="Pizza Logo">
+                </div>
+                <nav>
+                    <a class="phone" href="tel:4031234567">(403)123-4567</a>
+                </nav>
             </div>
-        </div>
-        <div>
-            <a href="tel:4031234567">(403)123-4567</a>
-        </div>
-        <div>
-            <img class="logo" src="/media/pizzalogo.png" alt="Pizza Logo">
-        </div>
-        
+            <section id="desktopheader">
+                <li><a class="links" href="index.html">HOME</a></li>
+                <li><a class="links" href="menu.html">MENU</a></li>
+                <li><a class="links" href="contact.html">CONTACT</a></li>
+            </section>
+            <div tabindex="0" id="menubutton">
+                <label>
+                    <img class="hambutton" src="/media/menu.svg" alt="Menu Button">
+                </label> 
+                <div id="dropdown">
+                    <ul>
+                        <li><a class="links" href="index.html">HOME</a></li>
+                        <li><a class="links" href="menu.html">MENU</a></li>
+                        <li><a class="links" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
         
     </header>
-    <main>
-        
-        <section id="aboutus">
+
+    <main id="homebody">
+        <section class="maincontainer">
             <h2>About Us</h2>
-            <p>Welcome to Okotoks Pizza where everyone is welcome to taste our delicious pizza and pasta!</p> 
-            <p> Okotoks Pizzas are made with only the freshest ingredients like mozzarella, roma tomatoes, made-from-scratch sauce and even features premium toppings like Sorriso Pepperoni, salami from Valbella meats and a healthy Flax crust. You feel good about ordering it. You feel good about eating it. And you feel even better knowing we're always ready to make you more.</p>
-            <a  class="readmore" href="contact.html">Read More</a>
+            <p>Welcome to Okotoks Pizza where everyone is welcome to taste our delicious pizza and pasta. Okotoks Pizzas are made with only the freshest ingredients like mozzarella, roma tomatoes, made-from-scratch sauce and even features premium toppings like Sorriso Pepperoni, salami from Valbella meats and a healthy Flax crust. You feel good about ordering it.</p>
+                <!-- <a class="readmore" href="contact.html">Read More</a> -->
+        </section>       
+        <img src="/media/restaurant.avif" alt="Inside of the restaurant">
+            
+        <section class="maincontainer">
+            <p>You feel good about eating it. And you feel even better knowing we're always ready to make you more!</p>
         </section>
-        <section id="insiderest">
-            <img src="/media/restaurant.avif" alt="Inside of the restaurant">
-        </section>
-        <section id="video">
-            <iframe width="360" height="215" src="https://www.youtube.com/embed/xbHbcmQIcAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-        <section>
+        <iframe src="https://www.youtube.com/embed/xbHbcmQIcAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <section class="maincontainer">
             <p>There are no short cuts when it comes to our passion. We pull out all the stops, giving you the ‘wow’ flavour, experience and consistency you not only want, but deserve. Our customers keep coming back, again, again, and again.</p>
         </section>    
-        <section>
-            <img src="/media/pizza1.avif" alt="Blueberry Greek Pizza with Cheese">
+        <img src="/media/pizza1.avif" alt="Blueberry Greek Pizza with Cheese">
+        <section class="maincontainer">
+            <p>“Delicious food and great atmosphere. Shared both pizza and pasta, was cooked perfect. Highly recommend.”</p>
+            <p>Google Review</p>
         </section>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.419553985786!2d-113.97620069999999!3d50.7121551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371982850fdce29%3A0xe128cbfc94408e77!2s93%20Westridge%20Dr%2C%20Okotoks%2C%20AB%20T1S%201V4!5e0!3m2!1sen!2sca!4v1666888940782!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     
     <footer id="footercontainer">
@@ -62,7 +74,7 @@
         </div>
         <div>
             <h2>Address</h2>
-            <p class="pfooter">123 Okotoks Ave Okotoks, AB T0M 1M1</p>
+            <p class="pfooter">93 Westridge Dr Okotoks, AB T1S 1V4</p>
         </div>
         <div>
             <h2>Business Hours</h2>
@@ -92,6 +104,5 @@
         </div>
         
     </footer>
-    
 </body>
 </html>

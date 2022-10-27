@@ -1,32 +1,90 @@
 @use "headerstyle";
 @use "footerstyle";
 
-#aboutus{
-    text-align: center;
-    margin-top: 10px;
-    font-size: 1.5rem;
-    box-sizing: border-box;
-}
 
-.readmore{
-    border-style: solid;
-    margin-top: 25px;
-    
+#desktopheader{
+    display: none;
 }
-
-#insiderest{
-    margin-top: 15px;
-    height: 80vh;
-    width: 100vw;
-}
-
-#video{
+#homebody{
     display: grid;
-    justify-content: center;
-}
-
-p{
-    font-size: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     text-align: center;
+    // margin-top: 20px;
+    padding-top: 85px;
+
+    img{
+        width: 100vw;
+        height: 50vh;
+        // margin-top: 20px;
+        // margin-bottom: 20px;
+        
+    }
+    iframe{
+        width: 100vw;
+        height: 50vh;
+        
+    }
+    p{
+        font-size: 1.5rem;
+        text-align: center;
+        // margin-top: 20px;
+        // margin-bottom: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    h2{
+        font-size: 2rem;
+        text-shadow: 3px 3px gray;
+    }
 }
 
+
+
+
+
+@media only screen and (min-width: 600px){
+    .maincontainer{
+        background-image: url(/media/restaurant2.webp);
+        box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+        color: white;
+    }
+
+}
+    
+@media only screen and(min-width: 1000px){
+        #homebody{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            img{
+                width: 33vw;
+                height: 50vh;
+            }
+            iframe{
+                width: 33vw;
+                height: 50vh;
+            }
+        }
+        .maincontainer{
+            text-align: center;
+            color: black;
+            padding: 20px;
+            line-height: 2em;
+        }
+        .hambutton{
+            display: none;
+        }
+        #desktopheader{
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-self: center;
+            text-align: center;
+            align-self: center;
+            a{
+                text-decoration: none;
+                font-size: 2rem;
+            }
+            
+        }
+}
+    

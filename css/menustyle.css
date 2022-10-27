@@ -1,5 +1,5 @@
 * {
-  margin: 1px;
+  margin: 0;
   padding: 0;
 }
 
@@ -8,17 +8,15 @@ html {
 }
 
 #headcontainer {
-  height: 40vh;
+  height: 20vh;
   width: 100vw;
   color: white;
-  background-image: url(/media/background.avif);
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  background-color: rgb(246, 246, 246);
   background-size: 100vw;
   display: grid;
-  grid-template-columns: 0.1fr 0.4fr 1fr;
-  justify-items: end;
-  align-content: start;
-  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  margin-top: -20px;
 }
 
 #menubutton {
@@ -28,21 +26,28 @@ html {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  justify-self: end;
+  margin-right: 25px;
 }
 
 .logo {
-  height: 20vh;
+  height: 15vh;
+  justify-self: end;
+  align-self: end;
 }
 
 .hambutton {
-  height: 10vh;
+  height: 20vh;
   width: 10vw;
+  justify-items: center;
 }
 
-a {
-  color: white;
+.phone {
+  color: red;
   text-decoration: none;
   list-style: none;
+  align-self: start;
+  justify-self: start;
 }
 
 li {
@@ -51,13 +56,15 @@ li {
 }
 
 #dropdown {
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
   display: none;
   position: absolute;
-  width: 50vw;
-  height: 40vh;
-  text-align: center;
-  padding: 30px;
+  min-width: 50vw;
+  min-height: 30vh;
+  padding: 15px 40px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  left: 50%;
   list-style: none;
   font-size: 2rem;
   -webkit-text-decoration-style: none;
@@ -71,6 +78,17 @@ li {
 #menubutton:focus-within #dropdown {
   display: block;
   pointer-events: all;
+}
+
+#home {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 3px 3px red;
+  height: 40vh;
+  background-image: url(/media/background.avif);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  background-size: 100vw;
 }
 
 #footercontainer {
@@ -123,6 +141,7 @@ li {
   align-items: center;
   background-image: url(/media/pizzamenu.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  background-size: 100vw;
   height: 50vh;
   width: 100vw;
   color: whitesmoke;
@@ -139,6 +158,7 @@ li {
   align-items: center;
   background-image: url(/media/appetizer.avif);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  background-size: 100vw;
   height: 50vh;
   width: 100vw;
   color: whitesmoke;
@@ -155,6 +175,7 @@ li {
   align-items: center;
   background-image: url(/media/pastamenu.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  background-size: 100vw;
   height: 50vh;
   width: 100vw;
   color: whitesmoke;
@@ -171,6 +192,7 @@ li {
   align-items: center;
   background-image: url(/media/dessertmenu.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  background-size: 100vw;
   height: 50vh;
   width: 100vw;
   color: whitesmoke;
