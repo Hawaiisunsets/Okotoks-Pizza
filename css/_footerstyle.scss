@@ -1,7 +1,10 @@
 #footercontainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    background-color: gray;
+    background-image: url(/media/Footer.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+    color: white;
+    font-size: 1.3rem;
     .logofooter{
         height: 50px;
     }
@@ -11,24 +14,26 @@
     
     nav{
         list-style: none;
-        color: white;   
+        color: black;   
     }
     a{
-        color: white;
+        color: black;
     }
     img{
         height: 20px;
     }
    li{
     list-style: none;
-   }
-   h2{
     color: black;
    }
+   h2{
+    color: yellow;
+   }
    .pfooter{
-    font-size: 1rem;
+    font-size: 1.3rem;
     display: grid;
     justify-items: start;
+    color: black
 }
 }
 

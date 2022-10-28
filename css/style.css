@@ -1,21 +1,27 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 html {
-  background-color: lightgray;
+  background-color: white;
 }
 
 #headcontainer {
   height: 20vh;
   width: 100vw;
   color: white;
-  background-color: white;
+  background-image: url(/media/header.webp);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
   background-size: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: fixed;
+}
+
+.links {
+  color: white;
 }
 
 #menubutton {
@@ -42,7 +48,7 @@ html {
 }
 
 .phone {
-  color: red;
+  color: white;
   text-decoration: none;
   list-style: none;
   align-self: start;
@@ -82,7 +88,10 @@ li {
 #footercontainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  background-color: gray;
+  background-image: url(/media/Footer.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1.3rem;
 }
 #footercontainer .logofooter {
   height: 50px;
@@ -92,24 +101,26 @@ li {
 }
 #footercontainer nav {
   list-style: none;
-  color: white;
+  color: black;
 }
 #footercontainer a {
-  color: white;
+  color: black;
 }
 #footercontainer img {
   height: 20px;
 }
 #footercontainer li {
   list-style: none;
-}
-#footercontainer h2 {
   color: black;
 }
+#footercontainer h2 {
+  color: yellow;
+}
 #footercontainer .pfooter {
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: grid;
   justify-items: start;
+  color: black;
 }
 
 #desktopheader {
@@ -123,15 +134,18 @@ li {
 #homebody {
   display: grid;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 80px;
+  color: #d8720b;
 }
 #homebody img {
   width: 100vw;
   height: 50vh;
+  border-radius: 20px;
 }
 #homebody iframe {
   width: 100vw;
   height: 50vh;
+  border-radius: 20px;
 }
 #homebody p {
   font-size: 1.5rem;
@@ -141,9 +155,27 @@ li {
 }
 #homebody h2 {
   font-size: 2rem;
-  text-shadow: 3px 3px gray;
+  text-shadow: 3px 3px whitesmoke;
 }
 
+@media only screen and (min-width: 700px) {
+  .hambutton {
+    display: none;
+  }
+  #desktopheader {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+  }
+  #desktopheader a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+}
 @media only screen and (min-width: 1050px) {
   .logo {
     display: none;
@@ -157,7 +189,7 @@ li {
   }
   #headcontainer .links {
     justify-self: center;
-    color: gray;
+    color: white;
   }
   #headcontainer .links:hover {
     font-size: 3rem;
@@ -166,7 +198,7 @@ li {
   #desktopsection {
     display: grid;
     justify-items: center;
-    background-image: url(/media/restaurant9.webp);
+    background-image: url(/media/belowheader.avif);
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
     background-size: 100%;
     padding-bottom: 50px;
@@ -207,7 +239,7 @@ li {
   }
   .maincontainer {
     text-align: center;
-    color: white;
+    color: #d8720b;
     padding: 20px;
     line-height: 2em;
   }
@@ -225,5 +257,12 @@ li {
   #desktopheader a {
     text-decoration: none;
     font-size: 2rem;
+  }
+  #footercontainer {
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .logofooter {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

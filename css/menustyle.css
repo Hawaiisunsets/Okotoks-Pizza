@@ -1,21 +1,27 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 html {
-  background-color: lightgray;
+  background-color: white;
 }
 
 #headcontainer {
   height: 20vh;
   width: 100vw;
   color: white;
-  background-color: white;
+  background-image: url(/media/header.webp);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
   background-size: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: fixed;
+}
+
+.links {
+  color: white;
 }
 
 #menubutton {
@@ -42,7 +48,7 @@ html {
 }
 
 .phone {
-  color: red;
+  color: white;
   text-decoration: none;
   list-style: none;
   align-self: start;
@@ -82,7 +88,10 @@ li {
 #footercontainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  background-color: gray;
+  background-image: url(/media/Footer.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1.3rem;
 }
 #footercontainer .logofooter {
   height: 50px;
@@ -92,24 +101,26 @@ li {
 }
 #footercontainer nav {
   list-style: none;
-  color: white;
+  color: black;
 }
 #footercontainer a {
-  color: white;
+  color: black;
 }
 #footercontainer img {
   height: 20px;
 }
 #footercontainer li {
   list-style: none;
-}
-#footercontainer h2 {
   color: black;
 }
+#footercontainer h2 {
+  color: yellow;
+}
 #footercontainer .pfooter {
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: grid;
   justify-items: start;
+  color: black;
 }
 
 #desktopheader {
@@ -125,18 +136,19 @@ h3 {
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+  color: gray;
 }
 
 p {
   font-family: "Nunito", Helvetica, Arial, Lucida, sans-serif;
   line-height: 1.6em;
+  color: #d8720b;
 }
 
 #h1header {
   display: grid;
   justify-items: center;
   text-align: center;
-  color: black;
 }
 
 #pizzasection {
@@ -149,7 +161,6 @@ p {
   align-items: center;
   background-image: url(/media/pizzamenu.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-  background-size: 100%;
   height: 50vh;
   width: 100vw;
   color: whitesmoke;
@@ -187,7 +198,6 @@ p {
   align-items: center;
   background-image: url(/media/pastamenu.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-  background-size: 100%;
   height: 50vh;
   width: 100vw;
   color: whitesmoke;
@@ -205,7 +215,6 @@ p {
   align-items: center;
   background-image: url(/media/dessertmenu.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-  background-size: 100%;
   height: 50vh;
   width: 100vw;
   color: whitesmoke;
@@ -213,7 +222,26 @@ p {
   text-shadow: 3px 3px red;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
+  .hambutton {
+    display: none;
+  }
+  #desktopheader {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+  }
+  #desktopheader a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+  #pizzamenu {
+    background-size: 100%;
+  }
   #pizzasection {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -222,9 +250,15 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+  #pastamenu {
+    background-size: 100%;
+  }
   #pastasection {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  #dessertmenu {
+    background-size: 100%;
   }
 }
 @media only screen and (min-width: 1050px) {
@@ -240,7 +274,7 @@ p {
   }
   #headcontainer .links {
     justify-self: center;
-    color: gray;
+    color: white;
   }
   #headcontainer .links:hover {
     font-size: 3rem;
@@ -249,7 +283,7 @@ p {
   #desktopsection {
     display: grid;
     justify-items: center;
-    background-image: url(/media/restaurant9.webp);
+    background-image: url(/media/belowheader.avif);
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
     background-size: 100%;
     padding-bottom: 50px;
@@ -313,5 +347,12 @@ p {
   #desktopheader a {
     text-decoration: none;
     font-size: 2rem;
+  }
+  #footercontainer {
+    display: grid;
+    grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .logofooter {
+    display: none;
   }
 }/*# sourceMappingURL=menustyle.css.map */
