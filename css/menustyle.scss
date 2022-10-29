@@ -1,6 +1,7 @@
 @use "_headerstyle";
 @use "_footerstyle";
-
+@import "_generalstyle";
+// @use doesn't work for generalstyle
 
 #desktopheader{
     display: none;
@@ -12,8 +13,8 @@
 
 h3{
     font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: $main-spacing;
+    margin-top: $main-spacing;
     margin-bottom: 10px;
     color: gray
 }
@@ -21,7 +22,7 @@ h3{
 p{
     font-family: 'Nunito',Helvetica,Arial,Lucida,sans-serif;
     line-height: 1.6em;
-    color: #d8720b;
+    color: $main-color;
 }
 
 
@@ -219,7 +220,7 @@ p{
         display: initial;
         height: 20vh;
         padding-top: 130px;
-        padding-bottom: 20px;
+        padding-bottom: $main-spacing;
     }
     
     #pizzamenu{
@@ -232,7 +233,7 @@ p{
     }
     
     #appetizermenu{
-        margin-top: 20px;
+        margin-top: $main-spacing;
     }
     
     #appetizersection{
@@ -242,7 +243,7 @@ p{
     
     #pastamenu{
         background-size: 100%;
-        margin-top: 20px;
+        margin-top: $main-spacing;
     }
     
     #pastasection{
@@ -252,7 +253,7 @@ p{
     
     #dessertmenu{
         background-size: 100%;
-        margin-top: 20px;
+        margin-top: $main-spacing;
     }
     
     #dessertsection{
@@ -281,7 +282,7 @@ p{
         display: grid;
         grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr;
         // added 0fr to hide the pizza logo
-        margin-top: 20px;
+        margin-top: $main-spacing;
     }
     
     .logofooter{

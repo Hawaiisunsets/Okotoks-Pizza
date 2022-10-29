@@ -118,7 +118,7 @@ li {
   padding: 15px 40px;
   background-image: url(/media/pizza6.jpeg);
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
+  border-radius: 20px;
   left: 0%;
   list-style: none;
   font-size: 2rem;
@@ -139,6 +139,43 @@ li {
 #menubutton:focus-within #dropdown {
   display: block;
   pointer-events: all;
+}
+
+@keyframes myCoolAnimation {
+  0% {
+    width: 400px;
+    background-image: url(/media/pizza1.avif);
+  }
+  25% {
+    width: 300px;
+    background-image: url(/media/pizza2.avif);
+  }
+  50% {
+    width: 200px;
+    background-image: url(/media/pizza3.avif);
+  }
+  75% {
+    width: 300px;
+    background-image: url(/media/pizza4.avif);
+  }
+  100% {
+    width: 400px;
+    background-image: url(/media/pasta1.jpeg);
+  }
+}
+#menubutton > #dropdown {
+  -webkit-animation: myCoolAnimation 30s ease-in-out;
+          animation: myCoolAnimation 30s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  background-color: white;
 }
 
 #footercontainer {
@@ -181,6 +218,43 @@ li {
 }
 #footercontainer #phonetab {
   color: black;
+}
+
+@keyframes myCoolAnimation {
+  0% {
+    width: 400px;
+    background-image: url(/media/pizza1.avif);
+  }
+  25% {
+    width: 300px;
+    background-image: url(/media/pizza2.avif);
+  }
+  50% {
+    width: 200px;
+    background-image: url(/media/pizza3.avif);
+  }
+  75% {
+    width: 300px;
+    background-image: url(/media/pizza4.avif);
+  }
+  100% {
+    width: 400px;
+    background-image: url(/media/pasta1.jpeg);
+  }
+}
+#menubutton > #dropdown {
+  -webkit-animation: myCoolAnimation 30s ease-in-out;
+          animation: myCoolAnimation 30s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  background-color: white;
 }
 
 #desktopheader {

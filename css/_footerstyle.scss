@@ -1,3 +1,6 @@
+@import "_generalstyle";
+// @use doesn't work for generalstyle
+
 #footercontainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -20,7 +23,7 @@
         color: black;
     }
     img{
-        height: 20px;
+        height: $main-spacing;
     }
     li{
         list-style: none;

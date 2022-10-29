@@ -1,6 +1,7 @@
 @use "_headerstyle";
 @use "_footerstyle";
-
+@import "_generalstyle";
+// @use doesn't work for generalstyle
 
 #desktopheader{
     display: none;
@@ -45,7 +46,7 @@
     padding-bottom: 30px;
     font-family: 'Kanit', sans-serif;
     font-size: 1.2em;
-    color: #d8720b;
+    color: $main-color;
     text-align: center;
     line-height: 1.6em;
 }
@@ -72,9 +73,8 @@
     .familyphoto2{
         height: 80%;
         width: 50%;
-        border-radius: 20px;
+        border-radius: 10px;
         object-fit: cover;
-
     }
 }
 
@@ -177,7 +177,7 @@ iframe{
         display: initial;
         height: 20vh;
         padding-top: 130px;
-        padding-bottom: 20px;
+        padding-bottom: $main-spacing;
     }
     
     .hambutton{

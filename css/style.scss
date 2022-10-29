@@ -1,5 +1,7 @@
 @use "headerstyle";
 @use "footerstyle";
+@import "_generalstyle";
+// @use doesn't work for generalstyle
 
 
 #desktopheader{
@@ -14,16 +16,16 @@
     display: grid;
     text-align: center;
     padding-top: 80px;
-    color: #d8720b;
+    color: $main-color;
     img{
         width: 100vw;
         height: 50vh;
-        border-radius: 20px;
+        border-radius: 30px;
     }
     iframe{
         width: 100vw;
         height: 50vh;
-        border-radius: 20px;
+        border-radius: 30px;
         
     }
     p{
@@ -132,7 +134,7 @@
         display: initial;
         height: 20vh;
         padding-top: 130px;
-        padding-bottom: 20px;
+        padding-bottom: $main-spacing;
     }
 
     #homebody{
@@ -153,8 +155,8 @@
 
     .maincontainer{
         text-align: center;
-        color: #d8720b;
-        padding: 20px;
+        color: $main-color;
+        padding: $main-spacing;
         line-height: 2em;
     }
         

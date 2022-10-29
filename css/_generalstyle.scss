@@ -1,0 +1,41 @@
+@keyframes myCoolAnimation {
+    0%{
+        width: 400px;
+        background-image: url(/media/pizza1.avif);
+    }
+    25%{
+        width: 300px;
+        background-image: url(/media/pizza2.avif);
+    }
+    50%{
+        width: 200px;
+        background-image: url(/media/pizza3.avif);
+    }
+    75%{
+        width: 300px;
+        background-image: url(/media/pizza4.avif);
+    }
+    100%{
+        width: 400px;
+        background-image: url(/media/pasta1.jpeg);
+    }
+}
+
+#menubutton >#dropdown{
+    animation: myCoolAnimation 30s ease-in-out;
+}
+    // made the time period longer so the animation is slower and users can click on the menu
+
+$main-spacing: 20px;
+$main-color: #d8720b;
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html{
+    background-color: white;
+}
+

@@ -1,40 +1,6 @@
-@keyframes myCoolAnimation {
-    0%{
-        width: 400px;
-        background-image: url(/media/pizza1.avif);
-    }
-    25%{
-        width: 300px;
-        background-image: url(/media/pizza2.avif);
-    }
-    50%{
-        width: 200px;
-        background-image: url(/media/pizza3.avif);
-    }
-    75%{
-        width: 300px;
-        background-image: url(/media/pizza4.avif);
-    }
-    100%{
-        width: 400px;
-        background-image: url(/media/pasta1.jpeg);
-    }
-}
+@import "_generalstyle";
+// @use doesn't work for generalstyle
 
-#menubutton >#dropdown{
-    animation: myCoolAnimation 30s ease-in-out;
-}
-    // made the time period longer so the animation is slower and users can click on the menu
-
-*{
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-html{
-    background-color: white;
-}
 
 #headcontainer{
     height: 20vh;
@@ -94,7 +60,7 @@ li{
     padding: 15px 40px;
     background-image: url(/media/pizza6.jpeg);
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
-    border-radius: 15px;
+    border-radius: $main-spacing;
     left: 0%;
     list-style: none;
     font-size: 2rem;
