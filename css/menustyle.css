@@ -179,6 +179,9 @@ li {
   justify-items: start;
   color: black;
 }
+#footercontainer #phonetab {
+  color: black;
+}
 
 #desktopheader {
   display: none;
@@ -279,9 +282,16 @@ p {
   text-shadow: 3px 3px red;
 }
 
+#phonetab {
+  display: none;
+}
+
 @media only screen and (min-width: 700px) {
   .hambutton {
     display: none;
+  }
+  .phone {
+    pointer-events: none;
   }
   #desktopheader {
     position: relative;
@@ -320,6 +330,12 @@ p {
   .links {
     color: white;
   }
+  #phonemobile {
+    display: none;
+  }
+  #phonetab {
+    display: initial;
+  }
 }
 @media only screen and (min-width: 1050px) {
   .logo {
@@ -327,6 +343,7 @@ p {
   }
   .phone {
     display: none;
+    pointer-events: none;
   }
   #headcontainer {
     grid-template-columns: 1fr 1fr 1fr;
@@ -375,12 +392,16 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+  #appetizermenu {
+    margin-top: 20px;
+  }
   #appetizersection {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
   #pastamenu {
     background-size: 100%;
+    margin-top: 20px;
   }
   #pastasection {
     display: grid;
@@ -388,6 +409,7 @@ p {
   }
   #dessertmenu {
     background-size: 100%;
+    margin-top: 20px;
   }
   #dessertsection {
     display: grid;
@@ -411,8 +433,15 @@ p {
   #footercontainer {
     display: grid;
     grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
   }
   .logofooter {
     display: none;
+  }
+  #phonemobile {
+    display: none;
+  }
+  #phonetab {
+    display: initial;
   }
 }/*# sourceMappingURL=menustyle.css.map */

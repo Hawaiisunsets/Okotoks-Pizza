@@ -12,21 +12,13 @@
 
 #homebody{
     display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     text-align: center;
-    // margin-top: 20px;
     padding-top: 80px;
     color: #d8720b;
-
     img{
         width: 100vw;
         height: 50vh;
         border-radius: 20px;
-        // margin-top: 20px;
-        // margin-bottom: 20px;
-        
-        
-        
     }
     iframe{
         width: 100vw;
@@ -37,8 +29,6 @@
     p{
         font-size: 1.5rem;
         text-align: center;
-        // margin-top: 20px;
-        // margin-bottom: 20px;
         padding-top: 30px;
         padding-bottom: 30px;
     }
@@ -48,10 +38,19 @@
     }
 }
 
+#phonetab{
+    display: none;
+}
+
+#footercontainer{
+    margin-top: 10px;
+}
+
 @media only screen and(min-width: 700px){
     .hambutton{
         display: none;
     }
+    // changed my hamburger button to actual text
     #desktopheader{
         position: relative;
         display: grid;
@@ -65,8 +64,21 @@
             margin-left: 10px;
         }
     }
+
+    .phone{
+        pointer-events: none;
+    }
+
     .links{
         color: white;
+    }
+
+    #phonemobile{
+        display: none;
+    }
+
+    #phonetab{
+        display: initial
     }
 }
     
@@ -77,19 +89,22 @@
     
     .phone{
         display: none;
+        pointer-events: none;
     }
+
     #headcontainer{
-            grid-template-columns: 1fr 1fr 1fr;
-            height: 15vh;
-            .links{
-                justify-self: center;
-                color: white
-            }
-            .links:hover{
-                font-size: 3rem;
-                color: red;
-            }
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 15vh;
+        .links{
+            justify-self: center;
+            color: white;
         }
+        .links:hover{
+            font-size: 3rem;
+            color: red;
+        }
+    }
+
     #desktopsection{
         display: grid;
         justify-items: center;
@@ -112,6 +127,7 @@
             color: red;
         }
     }
+
     #desktoppizzalogo{
         display: initial;
         height: 20vh;
@@ -119,47 +135,62 @@
         padding-bottom: 20px;
     }
 
-        #homebody{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            padding-top: 30px;
-            img{
-                width: 34vw;
-                height: 64vh;
-            }
-            iframe{
-                width: 34vw;
-                height: 64vh;
-                padding-top: 10px;
-            }
+    #homebody{
+        display: grid;
+        // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 30px;
+        img{
+            width: 34vw;
+            height: 64vh;
         }
-        .maincontainer{
-            text-align: center;
-            // color: white;
-            color: #d8720b;
-            padding: 20px;
-            line-height: 2em;
-        }
-        .hambutton{
-            display: none;
-        }
-        #desktopheader{
-            position: relative;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            justify-self: center;
-            text-align: center;
-            align-self: center;
-            a{
-                text-decoration: none;
-                font-size: 2rem;
-            }
-        }
-        #footercontainer{
-            display: grid;
-            grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr;
-        }
-        .logofooter{
-            display: none;
+        iframe{
+            width: 34vw;
+            height: 64vh;
+            padding-top: 10px;
         }
     }
+
+    .maincontainer{
+        text-align: center;
+        color: #d8720b;
+        padding: 20px;
+        line-height: 2em;
+    }
+        
+    .hambutton{
+        display: none;
+    }
+    
+    #desktopheader{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-self: center;
+        text-align: center;
+        align-self: center;
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+        }
+    }
+        
+    #footercontainer{
+        display: grid;
+        grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr;
+        // added 0fr to hide the pizza logo
+        margin-top: 10px;
+    }
+        
+    .logofooter{
+        display: none;
+    }
+    
+    #phonemobile{
+        display: none;
+    }
+    
+    #phonetab{
+        display: initial
+    }
+}

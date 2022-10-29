@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okotoks Pizza Contact</title>
-    <meta name="description" content="Okotoks Pizza website with menu and contact info">
-    <meta name="keywords" content="pizza, restaurant, hawaiian, pepperoni, delivery, take-out, pick-up, beef, chicken, pineapple, cheese, dough, sauce">
+    <meta name="description" content="Okotoks Pizza Restaurant website with menu and contact info.  A breif description of the pizza owner">
+    <meta name="keywords" content="Okotoks,pizza, pasta, restaurant, hawaiian, pepperoni, delivery, take-out, pick-up, beef, chicken, pineapple, cheese, dough, sauce, greek, italian, logo">
     <meta name="author" content="Victor Leung">
     <link rel="stylesheet" href="/css/contactstyle.css">
+    <meta property="og:site_name" content="Okotoks Pizza">
+    <meta name="twitter:card" content="Okotoks_Pizza_large_image">
+    <meta name="twitter:creator" content="@dougpizza">
+    <meta name="twitter:site" content="@okotokspizza">
+    <meta property="og:description" content="Okotoks Pizza is a website for pizza lover">
+    <meta property="og:image" content="https://twitter.com/okotokspizza">
 </head>
 <body>
     <header>
@@ -18,7 +24,7 @@
                     <img class="logo" src="/media/pizzalogo.png" alt="Pizza Logo">
                 </div>
                 <nav>
-                    <a class="phone" href="tel:4031234567">(403)123-4567</a>
+                    <a class="phone" href="tel:4031234567">(403) 123-4567</a>
                 </nav>
             </div>
             <section id="desktopheader">
@@ -32,6 +38,7 @@
                 </label> 
                 <div id="dropdown">
                     <ul id="dropdown2">
+                        <!-- Added dropdown2 so I can move the a-links to the right of the grid -->
                         <li><a class="links" href="index.html">HOME</a></li>
                         <li><a class="links" href="menu.html">MENU</a></li>
                         <li><a class="links" href="contact.html">CONTACT</a></li>
@@ -45,7 +52,7 @@
         <img id="desktoppizzalogo" src="/media/pizzalogo.png" alt="Okotoks Pizza Logo">
         <h1>OKOTOKS PIZZA AND PASTA</h1>
         <h1>--Since 2004--</h1>
-        <a href="tel:4031234567">(403) 123-4567</a>
+        <h1>(403) 123-4567</h1>
     </section>
     
     <main>
@@ -86,8 +93,10 @@
         <nav>
             <h2>Contact Us</h2>
             <li><a href="mailto:okotokspizza@hotmail.com" target="-blank">okotokspizza@hotmail.com</a></li>
-            <li><a href="tel:4031234567">(403)123-4567</a></li>
+            <li><a  id="phonemobile" href="tel:4031234567">(403)123-4567</a></li>
+            <p id="phonetab">(403) 123-4567</p>
         </nav>
+        
         <nav>
             <h2>Follow Us</h2>
             <a href="https://facebook.com" target="_blank"><img src="/media/facebookIcon.svg" alt="Facebook Icon"></a>

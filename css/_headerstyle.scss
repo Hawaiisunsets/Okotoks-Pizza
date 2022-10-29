@@ -24,6 +24,7 @@
 #menubutton >#dropdown{
     animation: myCoolAnimation 30s ease-in-out;
 }
+    // made the time period longer so the animation is slower and users can click on the menu
 
 *{
     margin: 0;
@@ -33,7 +34,6 @@
 
 html{
     background-color: white;
-    
 }
 
 #headcontainer{
@@ -61,7 +61,6 @@ html{
 }
 
 .logo{
-    
     height: 15vh;
     justify-self: end;
     align-self: end;

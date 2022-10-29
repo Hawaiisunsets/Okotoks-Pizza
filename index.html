@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Okotoks Pizza</title>
-    <meta name="description" content="Okotoks Pizza website with menu and contact info">
-    <meta name="keywords" content="pizza, restaurant, hawaiian, pepperoni, delivery, take-out, pick-up, beef, chicken, pineapple, cheese, dough, sauce">
+    <meta name="description" content="Okotoks Pizza Restaurant website with menu and contact info.  A breif description of the pizza owner">
+    <meta name="keywords" content="Okotoks,pizza, pasta, restaurant, hawaiian, pepperoni, delivery, take-out, pick-up, beef, chicken, pineapple, cheese, dough, sauce, greek, italian, logo">
     <meta name="author" content="Victor Leung">
     <link rel="stylesheet" href="/css/style.css">
+    <meta property="og:site_name" content="Okotoks Pizza">
+    <meta name="twitter:card" content="Okotoks_Pizza_large_image">
+    <meta name="twitter:creator" content="@dougpizza">
+    <meta name="twitter:site" content="@okotokspizza">
+    <meta property="og:description" content="Okotoks Pizza is a website for pizza lover">
+    <meta property="og:image" content="https://twitter.com/okotokspizza">
 </head>
 <body>
     <header>
@@ -18,7 +24,7 @@
                     <img class="logo" src="/media/pizzalogo.png" alt="Okotoks Pizza Logo">
                 </div>
                 <nav>
-                    <a class="phone" href="tel:4031234567">(403)123-4567</a>
+                    <a class="phone" href="tel:4031234567">(403) 123-4567</a>
                 </nav>
             </div>
             <section id="desktopheader">
@@ -32,6 +38,7 @@
                 </label> 
                 <div id="dropdown">
                     <ul id="dropdown2">
+                        <!-- Added dropdown2 so I can move the a-links to the right of the grid -->
                         <li><a class="links" href="index.html">HOME</a></li>
                         <li><a class="links" href="menu.html">MENU</a></li>
                         <li><a class="links" href="contact.html">CONTACT</a></li>
@@ -47,19 +54,18 @@
         <img id="desktoppizzalogo" src="/media/pizzalogo.png" alt="Okotoks Pizza Logo">
         <h1>OKOTOKS PIZZA AND PASTA</h1>
         <h1>--Since 2004--</h1>
-        <a href="tel:4031234567">(403) 123-4567</a>
+        <h1>(403) 123-4567</h1>
     </section>
 
     <main id="homebody">
         <section class="maincontainer">
             <h2>About Us</h2>
-            <p>Welcome to Okotoks Pizza where everyone is welcome to taste our delicious pizza and pasta. Okotoks Pizzas are made with only the freshest ingredients like mozzarella, roma tomatoes, made-from-scratch sauce and even features premium toppings like Sorriso Pepperoni, salami from Valbella meats and a healthy Flax crust. You feel good about ordering it.</p>
-                <!-- <a class="readmore" href="contact.html">Read More</a> -->
+            <p>Welcome to Okotoks Pizza where everyone is welcome to taste our delicious pizza and pasta. Okotoks Pizzas are made with only the freshest ingredients like mozzarella, roma tomatoes, made-from-scratch sauce and even features premium toppings like Sorriso Pepperoni, salami from Valbella meats and a healthy Flax crust.</p>
         </section>       
-        <img src="/media/restaurant.avif" alt="Inside of the restaurant">
+        <img src="/media/restaurant10.jpg" alt="Picture of inside the restaurant">
             
         <section class="maincontainer">
-            <p>You feel good about eating it. And you feel even better knowing we're always ready to make you more!</p>
+            <p>You feel good about ordering it.  You feel good about eating it.  And you feel even better knowing we're always ready to make you more!</p>
         </section>
         <iframe src="https://www.youtube.com/embed/xbHbcmQIcAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
@@ -74,10 +80,15 @@
         
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.419553985786!2d-113.97620069999999!3d50.7121551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5371982850fdce29%3A0xe128cbfc94408e77!2s93%20Westridge%20Dr%2C%20Okotoks%2C%20AB%20T1S%201V4!5e0!3m2!1sen!2sca!4v1666888940782!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <section class="maincontainer">
-            <p>"Best Pizza in town!"</p>
+            <p>"Best Pizza in town! You have to try the Mad Greek Pizza!  And the desserts are to die for!"</p>
             <p>Google Review</p>
         </section>
-        
+        <img src="/media/restaurant11.jpg" alt="Picture of restaurant with bench seating">
+        <section class="maincontainer">
+            <p>Delivery was fast! Pizza were hot and delicious! Staff are friendly and professional!</p>
+            <p>Google Review</p>
+        </section>
+        <img src="/media/restaurant12.jpg" alt="Picture of inside the restaurant with table seating">
     </main>
     
     <footer id="footercontainer">
@@ -101,8 +112,10 @@
         <nav>
             <h2>Contact Us</h2>
             <li><a href="mailto:okotokspizza@hotmail.com" target="-blank">okotokspizza@hotmail.com</a></li>
-            <li><a href="tel:4031234567">(403)123-4567</a></li>
+            <li><a id="phonemobile" href="tel:4031234567">(403)123-4567</a></li>
+            <p id="phonetab">(403) 123-4567</p>
         </nav>
+        
             
         
         <nav>

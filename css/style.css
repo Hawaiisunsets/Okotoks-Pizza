@@ -179,6 +179,9 @@ li {
   justify-items: start;
   color: black;
 }
+#footercontainer #phonetab {
+  color: black;
+}
 
 #desktopheader {
   display: none;
@@ -215,6 +218,14 @@ li {
   text-shadow: 3px 3px whitesmoke;
 }
 
+#phonetab {
+  display: none;
+}
+
+#footercontainer {
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 700px) {
   .hambutton {
     display: none;
@@ -232,8 +243,17 @@ li {
     font-size: 1.5rem;
     margin-left: 10px;
   }
+  .phone {
+    pointer-events: none;
+  }
   .links {
     color: white;
+  }
+  #phonemobile {
+    display: none;
+  }
+  #phonetab {
+    display: initial;
   }
 }
 @media only screen and (min-width: 1050px) {
@@ -242,6 +262,7 @@ li {
   }
   .phone {
     display: none;
+    pointer-events: none;
   }
   #headcontainer {
     grid-template-columns: 1fr 1fr 1fr;
@@ -285,7 +306,7 @@ li {
   }
   #homebody {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     padding-top: 30px;
   }
   #homebody img {
@@ -321,8 +342,15 @@ li {
   #footercontainer {
     display: grid;
     grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 10px;
   }
   .logofooter {
     display: none;
+  }
+  #phonemobile {
+    display: none;
+  }
+  #phonetab {
+    display: initial;
   }
 }/*# sourceMappingURL=style.css.map */
