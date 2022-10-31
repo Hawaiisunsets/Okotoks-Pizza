@@ -55,13 +55,13 @@ li{
     display: none;
     position: absolute;
     justify-items: end;
-    min-width: 50vw;
-    min-height: 30vh;
+    min-width: 15vw;
+    min-height: 20vh;
     padding: 15px 40px;
     background-image: url(/media/pizza6.jpeg);
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
     border-radius: $main-spacing;
-    left: 0%;
+    right: 0%;
     list-style: none;
     font-size: 2rem;
     text-decoration-style: none;        

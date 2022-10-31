@@ -17,10 +17,12 @@
     text-align: center;
     padding-top: 80px;
     color: $main-color;
+    // went with the gold color font because it match the color of the crust and the rustic theme i was going for
     img{
         width: 100vw;
         height: 50vh;
         border-radius: 30px;
+        // having rounded corners on img and iframe gave it a better style IMO 
     }
     iframe{
         width: 100vw;
@@ -112,6 +114,7 @@
         justify-items: center;
         background-image: url(/media/belowheader.avif);
         box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
+        // i used a lot of box shadow because it made the text pop out a bit more
         background-size: 100%;
         padding-bottom: 50px;
         color: white;
@@ -139,7 +142,6 @@
 
     #homebody{
         display: grid;
-        // grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         grid-template-columns: 1fr 1fr 1fr;
         padding-top: 30px;
         img{

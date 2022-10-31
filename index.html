@@ -9,6 +9,7 @@
     <meta name="keywords" content="Okotoks,pizza, pasta, restaurant, hawaiian, pepperoni, delivery, take-out, pick-up, beef, chicken, pineapple, cheese, dough, sauce, greek, italian, logo">
     <meta name="author" content="Victor Leung">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- social meta tags for Twitter -->
     <meta property="og:site_name" content="Okotoks Pizza">
     <meta name="twitter:card" content="Okotoks_Pizza_large_image">
     <meta name="twitter:creator" content="@dougpizza">
@@ -27,11 +28,13 @@
                     <a class="phone" href="tel:4031234567">(403) 123-4567</a>
                 </nav>
             </div>
+            <!-- in tablet and desktop device the hamburger button is disable for text -->
             <section id="desktopheader">
                 <li><a class="links" href="index.html">HOME</a></li>
                 <li><a class="links" href="menu.html">MENU</a></li>
                 <li><a class="links" href="contact.html">CONTACT</a></li>
             </section>
+            <!-- dropdown button  -->
             <div tabindex="0" id="menubutton">
                 <label>
                     <img class="hambutton" src="/media/menu.svg" alt="Menu Button">
@@ -47,7 +50,7 @@
             </div>
         </section>
     </header>
-
+    <!-- this is for desktop device only -->
     <section id="desktopsection">
         <img id="desktoppizzalogo" src="/media/pizzalogo.png" alt="Okotoks Pizza Logo">
         <h1>OKOTOKS PIZZA AND PASTA</h1>
@@ -58,6 +61,7 @@
     <main id="homebody">
         <section class="maincontainer">
             <h2>About Us</h2>
+            <!-- decided to split the About Us content in the homepage and the contact page -->
             <p>Welcome to Okotoks Pizza where everyone is welcome to taste our delicious pizza and pasta. Okotoks Pizzas are made with only the freshest ingredients like mozzarella, roma tomatoes, made-from-scratch sauce and even features premium toppings like Sorriso Pepperoni, salami from Valbella meats and a healthy Flax crust.</p>
         </section>       
         <img src="/media/restaurant10.jpg" alt="Picture of inside the restaurant">
@@ -89,12 +93,14 @@
         <img src="/media/restaurant12.jpg" alt="Picture of inside the restaurant with table seating">
     </main>
     
+    
     <footer id="footercontainer">
         <div>
             <img class="logofooter" src="/media/pizzalogo.png" alt="Pizza Logo">
         </div>
         <div>
             <h2>Address</h2>
+            <!-- address matches Google Map -->
             <p class="pfooter">93 Westridge Dr Okotoks, AB T1S 1V4</p>
         </div>
         <div>
@@ -111,6 +117,7 @@
             <h2>Contact Us</h2>
             <li><a href="mailto:okotokspizza@hotmail.com" target="-blank">okotokspizza@hotmail.com</a></li>
             <li><a id="phonemobile" href="tel:4031234567">(403)123-4567</a></li>
+            <!-- phone number is only clickable in mobile version so had to add another P tag for tablet and desktop -->
             <p id="phonetab">(403) 123-4567</p>
         </nav>
         <nav>
